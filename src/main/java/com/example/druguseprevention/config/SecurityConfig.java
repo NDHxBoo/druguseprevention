@@ -56,7 +56,7 @@ public class SecurityConfig {
         config.setAllowCredentials(true);
         config.setAllowedOrigins(Arrays.asList(
                 "http://localhost:5173",          // dev local
-                "https://your-react-app.vercel.app", // production
+                "swp-fe-ai7k-hb5xqjvjl-nguyen-duc-hoangs-projects-5438fcf9.vercel.app", // production
                 "https://druguseprevention.onrender.com"        // nếu bạn có domain
         ));
         config.setAllowedHeaders(Arrays.asList("*"));
