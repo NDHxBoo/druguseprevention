@@ -56,8 +56,8 @@ public class SecurityConfig {
         config.setAllowCredentials(true);
         config.setAllowedOrigins(Arrays.asList(
                 "http://localhost:5173",          // dev local
-                "swp-fe-ai7k-hb5xqjvjl-nguyen-duc-hoangs-projects-5438fcf9.vercel.app", // production
-                "https://druguseprevention.onrender.com"        // nếu bạn có domain
+                "https://swp-fe-khaki.vercel.app" // production
+       // nếu bạn có domain
         ));
         config.setAllowedHeaders(Arrays.asList("*"));
         config.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH"));
