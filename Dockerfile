@@ -20,4 +20,4 @@ COPY --from=build /app/target/demo-0.0.1-SNAPSHOT.war demo.war
 EXPOSE 8080
 
 # Lệnh chạy ứng dụng
-ENTRYPOINT ["java", "-jar", "demo.jar"]
+ENTRYPOINT ["java", "-jar", "demo.war"]
