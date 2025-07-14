@@ -8,10 +8,11 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 public class WebConfig implements WebMvcConfigurer {
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
-        // Chỉ forward các route không phải API và không phải file tĩnh
-        registry.addViewController("/{path:[^\\.]*}")
+        registry.addViewController("/{spring:\\w+}")
                 .setViewName("forward:/index.html");
-        registry.addViewController("/**/{path:[^\\.]*}")
+        registry.addViewController("/**/{spring:\\w+}")
                 .setViewName("forward:/index.html");
     }
 }
+
+
